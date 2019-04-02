@@ -6,7 +6,7 @@
     height: 6rem;
     display: flex;
     justify-content: space-between;
-
+    z-index: 100;
 }
 
 .Logo {
@@ -14,7 +14,7 @@
     object-fit: cover;
     background-color: var(--colorWhite);
     border-radius: 2px;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow);  
 }
 
 
@@ -24,6 +24,9 @@
 }
 
 .Link {
+    text-transform: uppercase;
+    line-height: 1.3;
     text-decoration: none;
-    padding: 2rem;
+    padding: 1rem 2rem;
+    color: var(--colorWhite);
 }

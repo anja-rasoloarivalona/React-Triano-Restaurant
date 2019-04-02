@@ -60,7 +60,6 @@ const AppLayout = styled.div`
 const AppMain = styled.section`
   grid-row: 2 / 3;
   grid-column: center-start / center-end;
-  background: blue;
 `
 
 
