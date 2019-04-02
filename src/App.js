@@ -7,6 +7,7 @@ import Menu from './Pages/Menu/Menu';
 import Drinks from './Pages/Drinks/Drinks';
 import Rooftop from './Pages/Rooftop/Rooftop';
 import Reservation from './Pages/Reservation/Reservation';
+import ScrollToTop from './components/layout/hoc/animation/ScrollTop';
 
 import styled from 'styled-components';
 import Navbar from './components/layout/Navbar/Navbar';
@@ -26,11 +27,13 @@ class App extends Component {
 
           <AppMain>
             <Switch>
+              <ScrollToTop>
                 <Route exact path="/" component={Home}></Route>       
                 <Route path="/menu" component={Menu}></Route>
                 <Route path="/drinks" component={Drinks}></Route>
                 <Route path="/rooftop" component={Rooftop}></Route>
                 <Route path="/reservation" component={Reservation}></Route>
+                </ScrollToTop>
             </Switch>
           </AppMain>
           <Footer />
