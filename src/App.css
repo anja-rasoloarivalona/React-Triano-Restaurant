@@ -24,6 +24,7 @@
   --gutter--md: 4rem;
   --gutter--lg: 6rem;
   --gutter--xlg: 8rem;
+  
 }
 
 
@@ -45,13 +46,10 @@ body {
   font-family: var(--defaultFont);
 }
 
-.title-secondary {
-    text-transform: uppercase;
-    color: var(--colorPrimary);
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 1.3;
-}
+
+
+
+
 
   
   

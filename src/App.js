@@ -33,10 +33,10 @@ class App extends Component {
                 <Route path="/reservation" component={Reservation}></Route>
             </Switch>
           </AppMain>
-
+          <Footer />
         </Router>
 
-        <Footer />
+       
 
       </AppLayout>
       

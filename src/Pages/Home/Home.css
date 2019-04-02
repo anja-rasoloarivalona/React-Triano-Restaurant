@@ -1,57 +1,132 @@
 .Main {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .Intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    align-items: center;
+    width: 50%;
+    margin-bottom: var(--gutter--md)
+    
 }
 
-.Main > * {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.Intro p {
+    font-size: 1.3rem;
+    color: var(--colorPrimary);
+    line-height: 1.4;
+    margin: .7rem 0;
 }
+
+
 
 .Chef {
+    width: 77%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: var(--gutter--lg)
 }
 
-.Chef > div {
+.ChefSection {
     display: flex;
+    margin-bottom: var(--gutter--xlg)
 }
 
 .ChefImg {
-    width: 40rem;
+    min-width: 40%;
     object-fit: cover; 
 }
 
-.Text1 {
+.Text1,
+.Text2 {
     padding: 0 2rem;
-    max-width: 50%;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    align-content: center;
+    justify-content: center;
 }
 
 .Text2 {
-    padding: 0 2rem;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
     order: -1;
 }
 
-.Text div {
-    margin-top: var(--gutter--sm);
+
+.Title {
+    text-transform: uppercase;
+  color: var(--colorSecondary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+
+
+.Text1 div,
+.Text2 div {
+    margin-top: var(--gutter--md);
     font-family: Times, serif;
     color: var(--colorPrimary);
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.3;
+}
 
+.Features {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--gutter--md);  
+}
+
+.Feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    max-width: 24.5rem;
+    margin: 0 1rem;
+}
+
+.FeatureBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FeatureImg {
+    height: 15rem;  
+    object-fit: cover;
+}
+
+.FeatureTitle {   
+    margin: 2rem 0;
+    text-transform: uppercase;
+    color: var(--colorSecondary);
+    font-size: 1.4rem;
+}
+
+.FeatureTitle::before,
+.FeatureTitle::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: var(--colorSecondary);
+    transform: translateX(15%);
+    margin: .4rem 0;
+}
+
+.FeatureContent {
+    font-family: Times, serif;
+    color: var(--colorPrimary);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding: 0 .9rem;
+       
 }
 
