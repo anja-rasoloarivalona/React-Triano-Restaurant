@@ -1,0 +1,29 @@
+.Navbar {
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+    background-color: var(--colorSecondary);
+    padding: 2rem;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Logo {
+    width: 21rem;
+    object-fit: cover;
+    background-color: var(--colorWhite);
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+}
+
+
+.List {
+    display: flex;
+    list-style: none;
+}
+
+.Link {
+    text-decoration: none;
+    padding: 2rem;
+}
