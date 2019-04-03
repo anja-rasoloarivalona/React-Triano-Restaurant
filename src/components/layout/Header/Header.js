@@ -12,7 +12,7 @@ class Header extends Component {
             <Spring
                 from={ {opacity:0, marginTop: -500 }}
                 to={{opacity: 1, marginTop: 0 }}
-                config={{duration: 1100}}> 
+                config={{duration: 500}}> 
                 
                 {props => (
                     <div style={props}>
