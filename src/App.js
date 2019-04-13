@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
 
+import classes from './App.css';
 
 import Home from './Pages/Home/Home';
 import Menu from './Pages/Menu/Menu';
 import Drinks from './Pages/Drinks/Drinks';
 import Rooftop from './Pages/Rooftop/Rooftop';
 import Reservation from './Pages/Reservation/Reservation';
-import ScrollToTop from './components/layout/hoc/animation/ScrollTop';
 
-import styled from 'styled-components';
-import Navbar from './components/layout/Navbar/Navbar';
+import ScrollToTop from './components/layout/hoc/animation/ScrollTop';
+import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
 import  './App.css';
 
@@ -20,28 +20,27 @@ class App extends Component {
   render() {
     return (
 
-      <AppLayout>
-
         <Router>
-          <Navbar />
+          <section className={classes.Container}>
+              <Header />     
+                      <Switch>
+                        <ScrollToTop>
+                          <Route exact path="/" component={Home}></Route>       
+                          <Route path="/menu" component={Menu}></Route>
+                          <Route path="/drinks" component={Drinks}></Route>
+                          <Route path="/rooftop" component={Rooftop}></Route>
+                          <Route path="/reservation" component={Reservation}></Route>
+                          </ScrollToTop>
+                      </Switch>
+                <Footer />
+          </section>
+          
 
-          <AppMain>
-            <Switch>
-              <ScrollToTop>
-                <Route exact path="/" component={Home}></Route>       
-                <Route path="/menu" component={Menu}></Route>
-                <Route path="/drinks" component={Drinks}></Route>
-                <Route path="/rooftop" component={Rooftop}></Route>
-                <Route path="/reservation" component={Reservation}></Route>
-                </ScrollToTop>
-            </Switch>
-          </AppMain>
-          <Footer />
         </Router>
 
        
 
-      </AppLayout>
+ 
       
         
 
@@ -51,6 +50,7 @@ class App extends Component {
 
 export default App;
 
+/*
 const AppLayout = styled.div`
   display: grid;
   grid-template-rows: repeat(3, max-content);
@@ -65,4 +65,4 @@ const AppMain = styled.section`
   grid-column: center-start / center-end;
 `
 
-
+*/

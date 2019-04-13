@@ -46,6 +46,12 @@ body {
   font-family: var(--defaultFont);
 }
 
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 100vh max-content max-content;
+}
+
 
 
 

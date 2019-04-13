@@ -1,38 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import classes from './Navbar.css';
-import logo from '../../../Assets/img/logo.png';
- class Navbar extends Component {
-  render() {
-    return (
-      <nav className={classes.Navbar}>
 
-            <Link to='/'>
-                    <img src={logo} alt="store" className={classes.Logo}/>
-            </Link>
-        
+const Navbar = () => {
+
+  return (
+
+    <nav className={classes.Navbar}>           
           <ul className={classes.List}>
               <li>
-                  <Link to="/" className={classes.Link}>Home</Link>
+                  <Link to="/" className={classes.Link}>HOME</Link>
               </li>
               <li>
-                  <Link to="/menu" className={classes.Link}>Menu</Link>
+                  <Link to="/about" className={classes.Link}>ABOUT</Link>
               </li>
               <li>
-                  <Link to="/drinks" className={classes.Link}>Drinks</Link>
+                  <Link to="/menu" className={classes.Link}>MENU</Link>
               </li>
               <li>
-                  <Link to="/rooftop" className={classes.Link}>Rooftop</Link>
+                  <Link to="/rooftop" className={classes.Link}>ROOFTOP</Link>
               </li>
               <li>
-                  <Link to="/reservation" className={classes.Link}>Reservation</Link>
+                  <Link to="/bar" className={classes.Link}>BAR</Link>
+              </li>
+              <li>
+                  <Link to="/reservation" className={classes.Link}>RESERVATION</Link>
+              </li>
+              <li>
+                  <Link to="/contact" className={classes.Link}>CONTACT</Link>
               </li>
           </ul>
-      </nav>
-    )
-  }
+    </nav>
+  )
 }
 
 export default Navbar;
+
+
 
 
