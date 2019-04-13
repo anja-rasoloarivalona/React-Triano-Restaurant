@@ -1,0 +1,18 @@
+.Main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem 0;
+}
+
+.TitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5rem;
+}

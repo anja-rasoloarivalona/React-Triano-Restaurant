@@ -1,27 +1,17 @@
 .Navbar {
-    grid-row: 1 / 2;
-    grid-column: full-start / full-end;
     background-color: var(--colorSecondary);
     padding: 2rem;
     height: 6rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
 }
-
-.Logo {
-    width: 21rem;
-    object-fit: cover;
-    background-color: var(--colorWhite);
-    border-radius: 2px;
-    box-shadow: var(--shadow);  
-    transform: translateX(3.5rem) translateY(8rem);
-}
-
 
 .List {
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
 }
 

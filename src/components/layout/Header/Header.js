@@ -1,31 +1,14 @@
 import React from 'react';
 import classes from './Header.css';
 import Navbar from '../Navbar/Navbar';
+import Main from '../Header/Main/Main';
 
 
  const Header = () => {
   return (
     <header className={classes.Header}>   
         
-        <section className={classes.Main}>
-            <div>
-                54 Avenue Colin, Montréal, QC CANADA
-            </div>
-            <div>
-                <h1>TRIANO</h1>
-                <h4>ALWAYS DELICIOUS</h4>
-            </div>
-            <div>
-                <div>
-                    +1 514 123 1234
-                </div>
-                <div>
-                    triano_restaurant@mymail.com
-                </div>
-            </div>
-        </section>
-
-
+        <Main />
         <Navbar />
             
     </header>
