@@ -8,11 +8,13 @@ import Menu from './Pages/Menu/Menu';
 import Drinks from './Pages/Drinks/Drinks';
 import Rooftop from './Pages/Rooftop/Rooftop';
 import Reservation from './Pages/Reservation/Reservation';
+import About from './Pages/About/About';
 
 import ScrollToTop from './components/layout/hoc/animation/ScrollTop';
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
 import  './App.css';
+
 
 
 
@@ -22,16 +24,21 @@ class App extends Component {
 
         <Router>
           <section className={classes.Container}>
-              <Header />     
-                      <Switch>
-                        <ScrollToTop>
-                          <Route exact path="/" component={Home}></Route>       
+          <Header />
+                    <Switch>
+
+                      
+                        <ScrollToTop>  
+                        <Route exact path="/" component={Home}></Route>                     
+                          <Route path="/about" component={About}></Route>      
                           <Route path="/menu" component={Menu}></Route>
                           <Route path="/drinks" component={Drinks}></Route>
                           <Route path="/rooftop" component={Rooftop}></Route>
                           <Route path="/reservation" component={Reservation}></Route>
+                       
                           </ScrollToTop>
                       </Switch>
+
                 <Footer />
           </section>
           

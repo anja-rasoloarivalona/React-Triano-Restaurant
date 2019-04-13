@@ -4,34 +4,18 @@ import Navbar from '../Navbar/Navbar';
 import Main from '../Header/Main/Main';
 
 
- const Header = () => {
+ const Header = (props) => {
   return (
-    <header className={classes.Header}>   
+    <header 
+        className={classes.Header}
+        style={{backgroundImage: "url(" + props.background + ")"}}>>          
         
-        <Main />
-        <Navbar />
-            
+            <Main />
+            <Navbar />
+           
     </header>
   )
 }
 
 export default Header;
 
-
-/*
-
-import { Spring } from 'react-spring/renderprops'
-
-
-<Spring
-                from={ {opacity:0, marginTop: -500 }}
-                to={{opacity: 1, marginTop: 0 }}
-                config={{duration: 500}}> 
-                
-                {props => (
-                    <div style={props}>
-                        <img src={this.props.img} className={classes.Img}/>             
-                    </div>  
-    
-                )}
-            </Spring>*/
